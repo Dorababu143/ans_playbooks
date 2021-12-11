@@ -5,7 +5,7 @@
   - name: i want to install ubuntu server on my node
     apt:
      name: apache2
-     state: persent
+     state: present
   - name: i want to start my ubuntu server service
     service:
       name: apache2
