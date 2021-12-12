@@ -1,5 +1,5 @@
 ---
-- hosts: mywebserver
+- hosts: all
   become: yes
   tasks:
   - name: i want to install a webserver by ubuntu server
@@ -10,7 +10,7 @@
   - name: i want to starte a webserver as a ubuntu server
     service:
       name: apache2
-      starte: started
+      state: started
     when: ansible_os_family=="Debian"  
   - name: i want to install a webserver by RedHat server
     yum:
