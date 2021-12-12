@@ -11,9 +11,6 @@
 [myRedHatserver]
 172.31.91.141
 
-[mywebserver:vars]
-myubuntuserver=apache2
-myRedHatserver=httpd
 
 
 
