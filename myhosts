@@ -12,6 +12,7 @@
 172.31.91.141
 
 [mywebserver]
+key=value
 myubuntuserver=apache2
 myRedHatserver=httpd
 
