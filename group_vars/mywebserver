@@ -1,3 +1,6 @@
 ---
 myubuntuserver: apache2
 myRedHatserver: httpd
+
+myubuntujavapack: openjdk-8-jdk
+myRedHatjavapack: java-1.8.0-openjdk
