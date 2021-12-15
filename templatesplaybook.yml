@@ -1,0 +1,12 @@
+---
+- hosts: 172.31.91.92
+  become: yes
+  tasks:
+  - name: i want to install apache2
+    apt:
+      name: apache2
+      state: present
+  - name: change the index file to my own data
+    templates:
+      src: indexfile.j2
+      dest: /var/www/html/index.html
