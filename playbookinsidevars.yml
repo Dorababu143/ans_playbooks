@@ -2,7 +2,7 @@
 - hosts: 172.31.91.92
   become: yes
   vars:
-    myvar1: git
+    myvar1: wget
     myvar2: tree
   tasks:
   - name: i want to install git
