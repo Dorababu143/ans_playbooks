@@ -1,5 +1,5 @@
 ---
-- hosts: mywebserver
+- hosts: myvarible
   become: yes
   var:
     myvar1: git
@@ -16,4 +16,3 @@
       name: myvar2
       state: present
     when: ansible_os_family=="RedHat"
-    
