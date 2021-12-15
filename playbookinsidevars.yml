@@ -7,12 +7,12 @@
   tasks:
   - name: i want to install git
     apt:
-      name: myvar1
+      name: "{{myvar1}}"
       state: present
     when: ansible_os_family == "Debian"
 
   - name: i want to install tree
     yum:
-      name: myvar2
+      name: "{{myvar2}}"
       state: present
     when: ansible_os_family == "RedHat"
