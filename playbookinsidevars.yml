@@ -1,7 +1,7 @@
 ---
 - hosts: myvarible
   become: yes
-  vars:
+  var:
     myvar1: git
     myvar2: tree
   tasks:
