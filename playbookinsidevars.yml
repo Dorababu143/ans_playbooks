@@ -1,7 +1,7 @@
 ---
 - hosts: myvarible
   become: yes
-  var:
+  vars:
     myvar1: git
     myvar2: tree
   tasks:
@@ -9,10 +9,10 @@
     apt:
       name: myvar1
       state: present
-    when: ansible_os_family=="Debian"
+    when: ansible_os_family == "Debian"
 
   - name: i want to install tree
     yum:
       name: myvar2
       state: present
-    when: ansible_os_family=="RedHat"
+    when: ansible_os_family == "RedHat"
