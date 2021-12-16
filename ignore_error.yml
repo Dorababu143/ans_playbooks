@@ -4,7 +4,7 @@
   tasks:
   - name: i want to install a webserver on ubuntu nodes
     apt:
-      name: apache22
+      name: apache2
       state: present
     when: ansible_os_family == "Debian"
   - name: i want to start a webserver on ubuntu nodes
@@ -14,7 +14,7 @@
     when: ansible_os_family == "Debian"
   - name: i want to install a webserver on RedHat nodes
     yum:
-      name: httpdd
+      name: httpd
       state: present
     when: ansible_os_family == "RedHat"
   - name: i want to start a webserver on RedHat
@@ -22,4 +22,14 @@
       name: httpd
       state: started
     when: ansible_os_family == "RedHat"
-
+  - name: i want to install git
+    apt:
+      name: git
+      state: present
+    when: ansible_os_family == "Debian"
+  - name: i want to install git
+    yum:
+      name: git
+      state: present
+    when: ansible_os_family == "RedHat"
+    
