@@ -16,6 +16,7 @@
     apt:
       name: "{{myubuntujavapack}}"
       state: present
+      update_cache: yes
     when: ansible_os_family == "Debian"
   - name: i want to install a webserver on RedHat nodes
     yum:
