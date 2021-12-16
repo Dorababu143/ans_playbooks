@@ -1,0 +1,8 @@
+---
+- hosts: 172.31.91.92
+  become: yes
+  tasks:
+  - name: i want to create a file in my ubuntu nodes
+    file:
+      path: /home/ubuntu/dora.txt
+      state: touch
