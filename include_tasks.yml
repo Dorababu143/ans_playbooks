@@ -1,0 +1,5 @@
+---
+- hosts: 172.31.91.92
+  become: yes
+  tasks:
+  - include_tasks: include_webserver.yml
