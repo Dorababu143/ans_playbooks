@@ -4,7 +4,7 @@
   tasks:
   - name: i want to install a webserver on ubuntu nodes
     apt:
-      name: apache2
+      name: apache22
       state: present
     when: ansible_os_family == "Debian"
   - name: i want to start a webserver on ubuntu nodes
@@ -32,4 +32,4 @@
       name: git
       state: present
     when: ansible_os_family == "RedHat"
-    
+
