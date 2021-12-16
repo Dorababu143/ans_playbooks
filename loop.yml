@@ -6,8 +6,8 @@
     apt:
       name: "{{Item}}"
       state: present
-      loop:
-        -git
-        -wget
-        -tree
+    loop:
+     -git
+     -wget
+     -tree
     when: ansible_os_family =="Debian"
