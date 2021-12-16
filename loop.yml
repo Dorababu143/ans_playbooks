@@ -1,0 +1,12 @@
+---
+- hosts: mywebserver
+  become: yes
+  tasks:
+  - name: i want to install git, wget and tree on my ubuntu nodes
+    apt:
+      name: "{{item}}"
+      state: present
+      loop:
+        -git
+        -wget
+        -tree
