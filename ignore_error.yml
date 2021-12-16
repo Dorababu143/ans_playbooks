@@ -7,6 +7,7 @@
       name: apache22
       state: present
     when: ansible_os_family == "Debian"
+    ignore_error: yes
   - name: i want to start a webserver on ubuntu nodes
     service:
       name: apache2
