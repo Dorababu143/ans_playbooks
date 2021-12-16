@@ -1,15 +1,38 @@
 ---
-- hosts: 172.31.91.92
+- hosts: mywebserver
   become: yes
   tasks:
-  - name: i want to install apache2
+  - name: i want to install a webserver on ubuntu nodes
     apt:
-      name: apache2
+      name: "{{myubuntuserver}}"
       state: present
-  - name: i want to start apache2
+    when: ansible_os_family == "Debian"
+  - name: i want to start my webservers on ubuntu nodes
     service:
-      name: apache2
+      name: "{{myubuntuserver}}"
       state: started
+    when: ansible_os_family == "Debian"
+  - name: i want to install a java on my ubuntu nodes
+    apt:
+      name: "{{myubuntujavapack}}"
+      state: present
+    when: ansible_os_family == "Debian"
+  - name: i want to install a webserver on RedHat nodes
+    yum:
+      name: "{{myRedHatserver}}"
+      state: present
+    when: ansible_os_family == "RedHat"
+  - name: i want to start my webserver on my RedHat nodes
+    service:
+      name: "{{myRedHatserver}}"
+      state: started
+    when: ansible_os_family == "RedHat"
+  - name: i want to install java on my RedHat nodes
+    yum:
+      name: "{{myRedHatjavapack}}"
+      state: present
+    when: ansible_os_family == "RedHat"
+
   - name: change the index file to my own data
     template:
       src: indexfile.j2
