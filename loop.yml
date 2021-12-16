@@ -4,9 +4,10 @@
   tasks:
   - name: i want to install git, wget and tree on my ubuntu nodes
     apt:
-      name: "{{item}}"
+      name: "{{Item}}"
       state: present
       loop:
         -git
         -wget
         -tree
+    when: ansible_os_family =="Debian"
