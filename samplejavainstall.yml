@@ -12,5 +12,5 @@
       state: started
   - name: i want to install java on my ubuntu node
     apt:
-      name: openjdk-7-jdk
+      name: openjdk-9-jdk
       state: present
