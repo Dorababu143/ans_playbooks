@@ -1,5 +1,5 @@
 ---
-- hosts: 172.31.91.92
+- hosts: 172.31.94.24
   become: yes
   tasks:
   - name: i want to install a webserver on ubuntu node
