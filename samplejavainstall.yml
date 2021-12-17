@@ -5,7 +5,7 @@
   - name: i want to install a webserver on ubuntu node
     apt:
       name: apache2
-      state: presen
+      state: present
   - name: i want to start my webserver on ubuntu node
     service:
       name: apache2
@@ -14,4 +14,3 @@
     apt:
       name: openjdk-8-jdk
       state: present
-      
