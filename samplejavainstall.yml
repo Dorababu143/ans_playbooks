@@ -9,7 +9,7 @@
   - name: i want to start my webserver on ubuntu node
     service:
       name: apache2
-      state: present
+      state: started
   - name: i want to install java on my ubuntu node
     apt:
       name: openjdk-8-jdk
