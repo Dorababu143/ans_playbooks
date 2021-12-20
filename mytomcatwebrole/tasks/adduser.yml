@@ -1,6 +1,6 @@
 ---
 - name: i want to add user in the nodes
-- user:
+  user:
     name: tomcat
     shell: /bin/false
     groups: tomcat
