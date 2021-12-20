@@ -1,7 +1,7 @@
 ---
 - name: i want to start my tomcatserver
   systemd:
-    name: tomcat
     state: started
+    name: tomcat
     enabled: True
     
