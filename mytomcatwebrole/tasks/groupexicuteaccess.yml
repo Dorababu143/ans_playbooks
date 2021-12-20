@@ -3,4 +3,4 @@
   file:
     path: /opt/tomcat/conf
     state: directory
-    mode: G+X
+    mode: g+x
