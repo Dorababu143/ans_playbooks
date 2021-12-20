@@ -1,4 +1,5 @@
 ---
 - name: i want to extract the downloaded tarfile into my node side.
-  command: sudo tar xzvf /home/ubuntu/apache-tomcat-8.5.5.tar.gz -C /opt/tomcat --strip-components=1
-  creates: /opt/tomcat/LICENCE
+  command: 
+    cmd: sudo tar xzvf /home/ubuntu/apache-tomcat-8.5.5.tar.gz -C /opt/tomcat --strip-components=1
+    creates: /opt/tomcat/LICENCE
