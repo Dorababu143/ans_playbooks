@@ -1,0 +1,6 @@
+---
+- name: i want to reload the systemd daemon
+  systemd:
+    daemon_reload: yes
+    name: tomcat
+    

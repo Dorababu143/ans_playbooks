@@ -1,0 +1,5 @@
+---
+- name: i want to restart my tomcat server
+  systemd:
+    state: restarted
+    name: tomcat

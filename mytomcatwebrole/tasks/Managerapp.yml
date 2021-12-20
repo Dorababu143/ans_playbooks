@@ -1,0 +1,5 @@
+---
+- name: i want to give managerapp permission
+  template:
+    src: templates/managerapp.j2
+    dest: /opt/tomcat/webapps/manager/META-INF/context.xml

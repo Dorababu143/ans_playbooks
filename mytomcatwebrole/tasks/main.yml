@@ -1,2 +1,25 @@
 ---
 # tasks file for mywebrole
+- include_tasks: update.yml
+- include_tasks: installjava.yml
+- include_tasks: addgroup.yml
+- include_tasks: adduser.yml
+- include_tasks: downloadtarfile.yml
+- include_tasks: createdirectory.yml
+- include_tasks: extracttarfile.yml
+- include_tasks: groupownershit.yml
+- include_tasks: groupreadaccess.yml
+- include_tasks: groupexicuteaccess.yml
+- include_tasks: tomcatuserownerofwebapps.yml
+- include_tasks: tomcatuserownerofwork.yml
+- include_tasks: tomcatuserowneroftemp.yml
+- include_tasks: tomcatuserowneroflogs.yml
+- include_tasks: servicefile.yml
+- include_tasks: deamon-reload.yml
+- include_tasks: starttomcat.yml
+- include_tasks: configuretomcatwebmanagement.yml
+- include_tasks: Managerapp.yml
+- include_tasks: hostmanagerapp.yml
+- include_tasks: restarttomcat.yml
+
+

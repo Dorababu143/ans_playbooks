@@ -1,0 +1,5 @@
+---
+- name: adding group user as tomcat
+  group:
+    name: tomcat
+    state: present

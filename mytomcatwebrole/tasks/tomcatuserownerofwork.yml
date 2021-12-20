@@ -1,0 +1,6 @@
+- name: Recursively Make the tomcat user the owner of the work directory
+  file:
+    path: /opt/tomcat/work
+    state: directory
+    recurse: yes
+    owner: tomcat

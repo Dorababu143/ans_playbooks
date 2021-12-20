@@ -1,0 +1,4 @@
+---
+- name: want to update the nodes
+  apt:
+    update_cache: yes

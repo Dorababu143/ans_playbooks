@@ -1,0 +1,6 @@
+---
+- name: i want to give group exicute access to the conf
+  file:
+    path: /opt/tomcat/conf
+    state: directory
+    mode: G+X

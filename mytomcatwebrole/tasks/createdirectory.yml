@@ -1,0 +1,5 @@
+---
+- name: i want to create a directory in my nodes
+  file:
+    path: /opt/tomcat
+    state: directory

@@ -1,0 +1,5 @@
+--- 
+- name: i want to give host permission
+  template:
+    src: templates/hostmanagerapp.j2
+    dest: /opt/tomcat/webapps/host-manager/META-INF/context.xml

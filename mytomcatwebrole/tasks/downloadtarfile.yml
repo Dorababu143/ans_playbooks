@@ -1,0 +1,5 @@
+---
+- name: i want to download tomcat tar file in to my nodes
+  get_url:
+    url: https://archive.apache.org/dist/tomcat/tomcat-8/v8.5.5/bin/apache-tomcat-8.5.5.tar.gz
+    dest: /home/ubuntu

@@ -1,0 +1,7 @@
+---
+- name: i want to start my tomcatserver
+  systemd:
+    name: tomcat
+    state: started
+    enabled: True
+    
